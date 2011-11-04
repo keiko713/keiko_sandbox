@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Search your words on Twitter - Keiko's sandbox</title>
+    <title>Search for some words on Twitter - Keiko's sandbox</title>
     <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css">
     <style type="text/css">
         body {
@@ -41,6 +41,7 @@
             }
         });
     </script>
+    <base href="${pageContext.request.contextPath}/" />
 </head>
 <body>
 
@@ -50,9 +51,9 @@
 
     <div class="row">
         <div class="span5">
-            <h3>Search your own words</h3>
-            Input your own words and choose the language.
-            After that, push the "search" button to start searching!<br>
+            <h3>Search for some words on Twitter</h3>
+            Type in some words, and choose the language.
+            After that, click the "search" button to start searching!<br>
             <form:form id="form" class="form-stacked" method="post" modelAttribute="tweetSearchBean">
                 <div class="clearfix">
                     <label for="keyword">Search Keyword <strong class="error" id="error"><form:errors path="searchKeyword" /></strong></label>

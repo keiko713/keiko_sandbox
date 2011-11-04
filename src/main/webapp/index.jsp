@@ -18,7 +18,7 @@
     </style>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <script src="http://twitter.github.com/bootstrap/1.3.0/bootstrap-scrollspy.js"></script>
-
+    <base href="${pageContext.request.contextPath}/" />
 </head>
 <body>
 <jsp:include page="WEB-INF/header_top.jsp"/>
@@ -31,7 +31,7 @@
 
         <p>Welcome to Keiko's sandbox. Please enjoy!</p>
 
-        <p><a class="btn primary large" href="/helloWorld/index.html">Go to Hello World Page! »</a></p>
+        <p><a class="btn primary large" href="helloWorld/index.html">Go to Hello World Page! »</a></p>
     </div>
 
     <!-- Showcase -->
@@ -46,14 +46,14 @@
                 <h3>Java & Twitter4j & Spring</h3>
                 <ul class="media-grid">
                     <li>
-                        <a href="/twitter/search.html"><img class="thumbnail" src="images/twittersearch.png" alt=""></a>
+                        <a href="twitter/search.html"><img class="thumbnail" src="images/twittersearch.png" alt=""></a>
                     </li>
                 </ul>
 
-                <p>Let's search any words whatever you want to search on Twitter!
-                    You can choose the particular language!</p>
+                <p>Let's search for anything you want on Twitter!
+                    You can choose the language!</p>
 
-                <p><a class="btn" href="/twitter/search.html">Let's go! »</a></p>
+                <p><a class="btn" href="twitter/search.html">Let's go! »</a></p>
             </div>
             <div class="span-one-third">
                 <h3>HTML5 & JavaScript</h3>
@@ -63,12 +63,12 @@
                                                                                    src="images/ayatonosaki.png" alt=""></a>
                     </li>
                 </ul>
-                <p>Web portfolio site for the photographer using HTML5, JavaScript, PHP, and CSS.</p>
+                <p>Web portfolio site for a photographer using HTML5, JavaScript, PHP, and CSS.</p>
 
                 <p><a class="btn" href="http://www.ayatonosaki.com/" target="_blank">Let's go! »</a></p>
             </div>
             <div class="span-one-third">
-                <h3>Comming Soon!</h3>
+                <h3>Coming Soon!</h3>
                 <ul class="media-grid">
                     <li>
                         <a href="#"><img class="thumbnail" src="images/comingsoon.png" alt=""></a>
@@ -93,8 +93,8 @@
                 <h2>My name is Keiko!</h2>
 
                 <p>
-                    Hello. My name is Keiko. I'm from Ishikawa, Japan and I'm living in SF now.
-                    I like interesting things especially about tech! I also like meeting new people and enjoying
+                    Hello. My name is Keiko. I'm from Ishikawa, Japan, and I've been living in San Francisco since February 2011.
+                    I like learning new things, especially technology! I also like meeting new people and enjoying
                     conversation.
                 </p>
 
@@ -112,8 +112,8 @@
 
                 <p>
                     I use Japanese and English everyday.
-                    Java is the language that I've used the most. I'd used Java for 3 years when I was in a Japanese IT company.
-                    Lately, I have been interested in Python and Ruby but I still like Java. That's why I use Java for making this web site!
+                    Java is the programming language that I've used the most. I had used Java for 3 years when I was working at a Japanese IT company.
+                    Lately, I have been interested in Python and Ruby, but I still like writing Java. That's why I'm using Java to make this web site!
                 </p>
 
                 <ul class="media-grid">

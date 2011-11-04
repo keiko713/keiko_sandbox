@@ -3,7 +3,7 @@
 <div class="topbar" data-scrollspy="scrollspy">
     <div class="fill">
         <div class="container">
-            <a class="brand" href="/">Keiko's sandbox</a>
+            <a class="brand" href="${pageContext.request.contextPath}/">Keiko's sandbox</a>
             <ul class="nav">
                 <li class="active"><a href="#home">Home</a></li>
                 <li><a href="#showcase">Showcase</a></li>

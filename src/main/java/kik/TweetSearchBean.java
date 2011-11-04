@@ -2,19 +2,26 @@ package kik;
 
 import org.hibernate.validator.constraints.NotEmpty;
 
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 /**
- * This is the bean for the searching.
+ * This is the bean for the searching on Twitter.
  * User: keiko
  * Date: 10/25/11
  */
 public class TweetSearchBean {
+
+    /**
+     * Search keyword should not be empty,
+     * and the length of it should be less than 15
+     */
     @NotEmpty
-    @Size(max=15)
+    @Size(max = 15)
     private String searchKeyword;
 
+    /**
+     * Select language should not be empty
+     */
     @NotEmpty
     private String langSelect;
 

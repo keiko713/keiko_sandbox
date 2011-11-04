@@ -15,6 +15,8 @@ import java.util.List;
 
 /**
  * The controller for the pages which relate with Twitter.
+ * The URL which start with "/twitter/" is gonna be mapped
+ * to this controller.
  * User: keiko
  * Date: 11/01/11
  */
@@ -23,6 +25,11 @@ import java.util.List;
 @SessionAttributes("tweetSearchBean")
 public class TwitterController {
 
+    /**
+     * To use TweetSearchBean as an argument of the controller method,
+     * need this create method.
+     * @return the new bean of TweetSearchBeen
+     */
     @ModelAttribute("tweetSearchBean")
     public TweetSearchBean createTweetSearchBean() {
         return new TweetSearchBean();

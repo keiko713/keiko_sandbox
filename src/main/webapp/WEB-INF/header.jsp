@@ -3,7 +3,7 @@
 <div class="topbar">
     <div class="fill">
         <div class="container">
-            <a class="brand" href="/">Keiko's sandbox</a>
+            <a class="brand" href="${pageContext.request.contextPath}/">Keiko's sandbox</a>
         </div>
     </div>
 </div>
