@@ -108,7 +108,7 @@
 
             </div>
             <div class="span8">
-                <h2>What language do I use?</h2>
+                <h2>What languages do I use?</h2>
 
                 <p>
                     I use Japanese and English everyday.
@@ -123,7 +123,7 @@
                     </li>
                 </ul>
 
-                <h2>Connection to me</h2>
+                <h2>Connect with me</h2>
 
                 <p>
                     <a href="http://www.linkedin.com/pub/keiko-oda/22/295/234" style="text-decoration:none;"><span

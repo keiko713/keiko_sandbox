@@ -37,7 +37,10 @@
         $(function() {
             var keyword = "${keyword}";
             if (keyword != "") {
-                $("#resultField").highlight(keyword);
+                var keywords = keyword.split(" ");
+                for (var i in keywords) {
+                    $("#resultField").highlight(keywords[i]);
+                }
             }
         });
     </script>
