@@ -62,7 +62,7 @@
                     <label for="keyword">Search Keyword <strong class="error" id="error"><form:errors path="searchKeyword" /></strong></label>
 
                     <div class="input">
-                        <form:input class="span4" id="keyword" size="15" path="searchKeyword"/>
+                        <form:input class="span4" id="keyword" size="25" path="searchKeyword"/>
                     </div>
                 </div>
 

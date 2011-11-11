@@ -12,27 +12,107 @@
     <title>Keiko's sandbox</title>
     <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css">
     <style type="text/css">
-        body, section, #home {
+        body {
+            background: url(images/bg_noise.png) top left repeat;
+        }
+
+        section {
             padding-top: 60px;
+        }
+
+        .jumbotron {
+            min-width: 940px;
+            padding-top: 40px;
+        }
+
+        .jumbotron .inner {
+            padding: 25px 0;
+        }
+
+        .jumbotron h2 {
+            font-size: 34px;
+            line-height: 1;
+            margin-bottom: 25px;
+            text-align: center;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+        }
+
+        .topphoto {
+            margin: 0px;
+        }
+
+        .topphoto li {
+            display: block;
+            float: left;
+            width: 100px;
+            height: 75px;
+            line-height: 75px;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            margin: 0px;
         }
     </style>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <script src="http://twitter.github.com/bootstrap/1.3.0/bootstrap-scrollspy.js"></script>
-    <base href="${pageContext.request.contextPath}/" />
+    <script type="text/javascript">
+        function changePic(picName) {
+            photo = document.getElementById("photo");
+            photo.src = "images/top/" + picName + ".jpg";
+        }
+        $(function() {
+            $("#photo").attr("src", function() {
+                var num = Math.floor(Math.random()*7) + 1;
+                return "images/top/top" + num + ".jpg";
+            });
+        });
+    </script>
+    <base href="${pageContext.request.contextPath}/"/>
 </head>
 <body>
 <jsp:include page="WEB-INF/header_top.jsp"/>
 
-<div class="container">
+<header class="jumbotron subhead" id="home">
+    <div class="inner">
+        <div class="container">
+            <h2>Welcome to Keiko's sandbox!</h2>
 
-    <!-- Main hero unit for a primary marketing message or call to action -->
-    <div class="hero-unit" id="home">
-        <h1>Hello, world!</h1>
-
-        <p>Welcome to Keiko's sandbox. Please enjoy!</p>
-
-        <p><a class="btn primary large" href="helloWorld/index.html">Go to Hello World Page! »</a></p>
+            <div class="row">
+                <div class="span2">
+                    <ul class="topphoto">
+                        <li><img class="thumbnail" src="images/top/thumb_top1.jpg" alt="" onclick="changePic('top1')">
+                        </li>
+                        <li><img class="thumbnail" src="images/top/thumb_top2.jpg" alt="" onclick="changePic('top2')">
+                        </li>
+                        <li><img class="thumbnail" src="images/top/thumb_top3.jpg" alt="" onclick="changePic('top3')">
+                        </li>
+                        <li><img class="thumbnail" src="images/top/thumb_top4.jpg" alt="" onclick="changePic('top4')">
+                        </li>
+                    </ul>
+                </div>
+                <div class="span12">
+                    <img id="photo" class="thumbnail" src="" alt="" width="700" height="300">
+                </div>
+                <div class="span2">
+                    <ul class="topphoto">
+                        <li><img class="thumbnail" src="images/top/thumb_top5.jpg" alt="" onclick="changePic('top5')">
+                        </li>
+                        <li><img class="thumbnail" src="images/top/thumb_top6.jpg" alt="" onclick="changePic('top6')">
+                        </li>
+                        <li><img class="thumbnail" src="images/top/thumb_top7.jpg" alt="" onclick="changePic('top7')">
+                        </li>
+                        <li><img class="thumbnail" src="images/top/thumb_top8.jpg" alt="" onclick="changePic('top8')">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /container -->
     </div>
+</header>
+
+
+<div class="container">
 
     <!-- Showcase -->
     <section id="showcase">
@@ -93,7 +173,8 @@
                 <h2>My name is Keiko!</h2>
 
                 <p>
-                    Hello. My name is Keiko. I'm from Ishikawa, Japan, and I've been living in San Francisco since February 2011.
+                    Hello. My name is Keiko. I'm from Ishikawa, Japan, and I've been living in San Francisco since
+                    February 2011.
                     I like learning new things, especially technology! I also like meeting new people and enjoying
                     conversation.
                 </p>
@@ -112,8 +193,10 @@
 
                 <p>
                     I use Japanese and English everyday.
-                    Java is the programming language that I've used the most. I had used Java for 3 years when I was working at a Japanese IT company.
-                    Lately, I have been interested in Python and Ruby, but I still like writing Java. That's why I'm using Java to make this web site!
+                    Java is the programming language that I've used the most. I had used Java for 3 years when I was
+                    working at a Japanese IT company.
+                    Lately, I have been interested in Python and Ruby, but I still like writing Java. That's why I'm
+                    using Java to make this web site!
                 </p>
 
                 <ul class="media-grid">

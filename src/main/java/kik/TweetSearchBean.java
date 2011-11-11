@@ -16,7 +16,7 @@ public class TweetSearchBean {
      * and the length of it should be less than 15
      */
     @NotEmpty
-    @Size(max = 15)
+    @Size(max = 25)
     private String searchKeyword;
 
     /**
